@@ -1,0 +1,249 @@
+<section class="quant-explainer" aria-label="Generality ladder explainer with rope-ladder metaphor">
+  <style>
+    .quant-explainer{
+      max-width: 980px;
+      margin: 1.25rem auto;
+      font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:#111;
+    }
+    .qe-card{
+      border: 1px solid #e8e8e8;
+      border-radius: 18px;
+      padding: 18px;
+      background:#fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.045);
+    }
+    .qe-head{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .qe-head h2{
+      margin:0;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+    }
+    .qe-head .qe-sub{
+      margin:0;
+      font-size: 12px;
+      color:#666;
+      white-space: nowrap;
+    }
+
+    .qe-grid{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+      align-items:start;
+    }
+    @media (max-width: 860px){
+      .qe-grid{ grid-template-columns: 1fr; }
+    }
+
+    .qe-figure{
+      border: 1px solid #efefef;
+      border-radius: 14px;
+      overflow:hidden;
+      background:#fafafa;
+    }
+    .qe-figure img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .qe-figcap{
+      padding: 10px 12px 12px;
+      font-size: 12px;
+      color:#666;
+      border-top: 1px solid #efefef;
+      background:#fff;
+    }
+
+    .qe-story{
+      border: 1px solid #efefef;
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      background:#fff;
+    }
+    .qe-story p{ margin: 0 0 10px; color:#222; }
+    .qe-pill{
+      display:inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border: 1px solid #eaeaea;
+      border-radius: 999px;
+      color:#555;
+      background:#fcfcfc;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+
+    .qe-table{
+      margin-top: 14px;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 1px solid #efefef;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .qe-table th, .qe-table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid #f2f2f2;
+      vertical-align: top;
+    }
+    .qe-table tr:last-child td{ border-bottom: 0; }
+    .qe-table th{
+      background:#fafafa;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color:#666;
+    }
+    .qe-n{
+      width: 46px;
+      color:#777;
+      font-variant-numeric: tabular-nums;
+    }
+    .qe-rung{ width: 220px; font-weight: 650; }
+    .qe-verb{ font-weight: 650; }
+    .qe-soft{ color:#555; }
+
+    .qe-foot{
+      margin: 10px 2px 0;
+      font-size: 12px;
+      color:#666;
+    }
+    .qe-foot em{ font-style: normal; font-weight: 650; color:#444; }
+    .qe-code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      color:#444;
+      background:#fafafa;
+      border:1px solid #efefef;
+      border-radius: 12px;
+      padding: 10px 12px;
+      overflow:auto;
+      margin-top: 10px;
+    }
+  </style>
+
+  <div class="qe-card">
+    <div class="qe-head">
+      <h2>The rope-ladder of explanation</h2>
+      <p class="qe-sub">where description turns into explanation, and then meta-interpretation</p>
+    </div>
+
+    <div class="qe-grid">
+      <figure class="qe-figure">
+        <!-- Replace the src with your GitHub RAW or GitHub Pages URL -->
+        <img
+          src="https://raw.githubusercontent.com/YOUR-USER/YOUR-REPO/main/images/rope-ladder-noir.png"
+          alt="A climber ascending an endless rope ladder into mist while a judge below lets out more rope"
+          loading="lazy"
+        />
+        <figcaption class="qe-figcap">
+          Theorist as climber; “Supreme Court” as empirical adjudication. The ladder extends as it is climbed.
+        </figcaption>
+      </figure>
+
+      <div class="qe-story">
+        <p>
+          Think of inquiry as a rope ladder disappearing into mist. The theorist climbs by grasping
+          successively more general rungs. The “Supreme Court of Appeal” does not supply a final top rung.
+          It decides whether the last rung will hold.
+        </p>
+        <p>
+          Each ascent is two-way. Induction ties new rungs above from repeated success below.
+          Deduction then climbs back down, deriving what should be seen and measured.
+        </p>
+        <p>
+          The crucial hinge is not “law” in the abstract. <span class="qe-verb">Explanation starts</span> when a quantitative relation
+          constrains outcomes within a domain <span class="qe-pill">description → explanation</span>, and becomes
+          determinate only when constitutive relations and conditions close the system.
+          <span class="qe-verb">Meta-interpretation</span> begins when you explain why whole families of laws share form
+          <span class="qe-pill">explanation → meta</span>.
+        </p>
+      </div>
+    </div>
+
+    <table class="qe-table" role="table" aria-label="Ladder rungs and triad verbs">
+      <thead>
+        <tr>
+          <th class="qe-n">#</th>
+          <th class="qe-rung">Rung</th>
+          <th>Triad verb (expanded)</th>
+          <th>What it contributes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="qe-n">1</td>
+          <td class="qe-rung">Signal / encounter</td>
+          <td><span class="qe-verb">Notice</span> <span class="qe-soft">| register | detect</span></td>
+          <td>Raw appearance. A “something happened” event.</td>
+        </tr>
+        <tr>
+          <td class="qe-n">2</td>
+          <td class="qe-rung">Public description</td>
+          <td><span class="qe-verb">Name</span> <span class="qe-soft">| classify | record</span></td>
+          <td>Shared report. The phenomenon is stabilised as an object/event.</td>
+        </tr>
+        <tr>
+          <td class="qe-n">3</td>
+          <td class="qe-rung">Regularity</td>
+          <td><span class="qe-verb">Summarise</span> <span class="qe-soft">| generalise | correlate</span></td>
+          <td>Pattern: “when A, typically B.” Still description at scale.</td>
+        </tr>
+        <tr>
+          <td class="qe-n">4</td>
+          <td class="qe-rung">Operational law</td>
+          <td>
+            <span class="qe-verb">Explain</span> <span class="qe-soft">| model | predict</span>
+            <span class="qe-pill">description → explanation</span>
+          </td>
+          <td>Quantitative constraint among measured variables within a defined regime.</td>
+        </tr>
+        <tr>
+          <td class="qe-n">5</td>
+          <td class="qe-rung">Constitutive closure</td>
+          <td><span class="qe-verb">Specify</span> <span class="qe-soft">| close | calibrate</span></td>
+          <td>
+            Makes laws usable: equation of state, response law, plus boundary/initial conditions.
+            Converts “formal” into “determinate”.
+          </td>
+        </tr>
+        <tr>
+          <td class="qe-n">6</td>
+          <td class="qe-rung">Structural constraint</td>
+          <td><span class="qe-verb">Constrain</span> <span class="qe-soft">| derive | legitimise</span></td>
+          <td>Why admissible laws must have certain forms (symmetry, invariance, conservation).</td>
+        </tr>
+        <tr>
+          <td class="qe-n">7</td>
+          <td class="qe-rung">Unifying framework</td>
+          <td>
+            <span class="qe-verb">Interpret</span> <span class="qe-soft">| unify | re-express</span>
+            <span class="qe-pill">explanation → meta</span>
+          </td>
+          <td>Meta-level coherence. Many domain-laws become one architecture in different regimes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="qe-foot">
+      Minimal rule: <em>Explanation</em> is not “a fundamental equation” alone.
+      It is operational constraint plus constitutive closure, then tested by the court of measurement.
+      <em>Meta</em> begins when you explain why the constraints come in families.
+    </p>
+
+    <div class="qe-code" aria-label="GitHub image URL tips">
+      <strong>GitHub image URL tips</strong><br/>
+      1) Raw file: https://raw.githubusercontent.com/USER/REPO/BRANCH/path/to/image.png<br/>
+      2) GitHub Pages: https://USER.github.io/REPO/path/to/image.png (recommended for stable hosting)<br/>
+      3) Ensure the repo or Pages site is public, or the image will not load for others.
+    </div>
+  </div>
+</section>
