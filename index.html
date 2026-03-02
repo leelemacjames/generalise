@@ -43,6 +43,26 @@ body{font-family:var(--serif);font-size:17px;line-height:1.72;color:var(--ink);b
 .prose p:last-child{margin-bottom:0}
 .prose strong{font-weight:600}
 
+.walk-section{padding:48px 0 56px}
+.walk-intro{font-size:18px;line-height:1.72;color:var(--ink);margin-bottom:36px}
+.walk-steps{position:relative;padding-left:0}
+.walk-step{display:grid;grid-template-columns:64px 1fr;gap:0 20px;margin-bottom:32px;opacity:0;transform:translateY(18px);transition:opacity 0.5s ease,transform 0.5s ease}
+.walk-step.visible{opacity:1;transform:translateY(0)}
+.walk-step-marker{display:flex;flex-direction:column;align-items:center}
+.walk-step-num{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;font-size:16px;color:#fff;background:var(--ink);position:relative;z-index:1}
+.walk-step[data-level="describe"] .walk-step-num{background:#7f8c8d}
+.walk-step[data-level="explain"] .walk-step-num{background:var(--accent)}
+.walk-step-wire{flex:1;width:2px;background:repeating-linear-gradient(180deg,var(--border) 0px,var(--border) 5px,transparent 5px,transparent 10px);margin-top:8px}
+.walk-step:last-child .walk-step-wire{display:none}
+.walk-step-content{padding-top:6px}
+.walk-step-label{font-family:var(--sans);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--slate);margin-bottom:4px}
+.walk-step-label .wsl-tag{color:var(--accent);margin-left:8px;font-weight:500;text-transform:none;letter-spacing:0}
+.walk-step-title{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.walk-step-text{font-size:16px;line-height:1.68;color:#444}
+.walk-step-text em{font-style:italic}
+.walk-aside{margin-top:36px;padding:20px 24px;background:#f5f2ec;border-radius:12px;font-size:15px;line-height:1.65;color:#555}
+.walk-aside strong{color:var(--ink)}
+
 .quote-tabs{margin:48px 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff}
 .quote-tab-bar{display:flex;border-bottom:1px solid var(--border);overflow-x:auto}
 .quote-tab-btn{flex:1;min-width:100px;padding:14px 12px;font-family:var(--sans);font-size:13px;font-weight:500;color:var(--slate);background:transparent;border:none;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.25s ease;text-align:center;white-space:nowrap}
@@ -159,6 +179,88 @@ body{font-family:var(--serif);font-size:17px;line-height:1.72;color:var(--ink);b
       <p class="fade-in">These are not idle puzzles. The history of physics is a history of climbing, and the rungs are not always stable. Locke's naive empiricism would strand us on the lowest rungs, insisting that knowledge begins and ends in sensory experience. But the deepest laws of physics invoke entities no one has ever seen: curved spacetime, gauge fields, wavefunctions. The ladder leads upward into abstraction, and the question of whether the upper rungs describe reality or merely organise our predictions remains open.</p>
       <p class="fade-in">The simplest compression of this ascent is a triad: <strong>Observe, Describe, Explain</strong>. But the triad hides important structure. Between raw observation and deep explanation lie distinct stages, each demanding its own intellectual commitment. The ladder spreads out what the triad compresses.</p>
     </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- SUPERMOON WALKTHROUGH: THE 5-RUNG PREVIEW   -->
+<!-- ════════════════════════════════════════════ -->
+<section class="walk-section container">
+  <div class="section-head fade-in" style="border-top:none;padding-top:24px;">
+    <div class="kicker">A First Climb</div>
+    <h2>The anomalously large supermoon</h2>
+  </div>
+
+  <p class="walk-intro fade-in">
+    Before we formalise the ladder, let us climb it once with something familiar. You step outside on a clear evening and the Moon, low on the horizon, looks enormous, far larger than it ever appears overhead. It is a supermoon, you are told. Is it really bigger? How would you know? Watch how the simplest triad, <strong>Observe, Describe, Explain</strong>, unfolds into five distinct commitments.
+  </p>
+
+  <div class="walk-steps">
+
+    <div class="walk-step" data-level="observe">
+      <div class="walk-step-marker">
+        <div class="walk-step-num">1</div>
+        <div class="walk-step-wire"></div>
+      </div>
+      <div class="walk-step-content">
+        <div class="walk-step-label">Percept <span class="wsl-tag">Observe</span></div>
+        <div class="walk-step-title">Something catches your eye</div>
+        <div class="walk-step-text">You see a large, luminous disc sitting just above the rooftops. It looks strikingly, almost implausibly, big. This is raw experience: private, situated, unrepeatable. You have not yet decided what it <em>is</em>, only that it is <em>there</em>. No measurement, no comparison, no claim. Just the percept.</div>
+      </div>
+    </div>
+
+    <div class="walk-step" data-level="describe">
+      <div class="walk-step-marker">
+        <div class="walk-step-num">2</div>
+        <div class="walk-step-wire"></div>
+      </div>
+      <div class="walk-step-content">
+        <div class="walk-step-label">Fact <span class="wsl-tag">Describe</span></div>
+        <div class="walk-step-title">You name what you see</div>
+        <div class="walk-step-text">You identify the object as the Moon. Specifically, tonight it is a supermoon: the full Moon near perigee, its closest orbital approach to Earth. The angular diameter is about 14% larger than at apogee. This is now a public, reportable fact. Anyone with a telescope can confirm the identification. But notice: the Moon <em>looks</em> far more than 14% larger. Something else is going on.</div>
+      </div>
+    </div>
+
+    <div class="walk-step" data-level="describe">
+      <div class="walk-step-marker">
+        <div class="walk-step-num">3</div>
+        <div class="walk-step-wire"></div>
+      </div>
+      <div class="walk-step-content">
+        <div class="walk-step-label">Regularity <span class="wsl-tag">Describe (patterned)</span></div>
+        <div class="walk-step-title">You notice a pattern</div>
+        <div class="walk-step-text">The Moon always looks larger near the horizon than when it is high overhead, regardless of whether it is at perigee. This is the Moon illusion, documented since antiquity. It is a stable, repeatable correlation: low elevation angle is systematically associated with perceived enlargement. But correlation is not explanation. <em>Why</em> does it look bigger? At this rung, we do not know.</div>
+      </div>
+    </div>
+
+    <div class="walk-step" data-level="explain">
+      <div class="walk-step-marker">
+        <div class="walk-step-num">4</div>
+        <div class="walk-step-wire"></div>
+      </div>
+      <div class="walk-step-content">
+        <div class="walk-step-label">Law <span class="wsl-tag">Explain</span></div>
+        <div class="walk-step-title">A quantitative relation constrains the outcome</div>
+        <div class="walk-step-text">The true angular diameter of the Moon is calculable from Kepler's laws and the known orbital elements: about 0.56&deg; at perigee, 0.49&deg; at apogee. A camera confirms this. The perceived enlargement at the horizon is not optical but perceptual, a failure of the visual system's size-distance scaling. Explanation has begun: we now have a measurable quantity (angular size) that <em>predicts</em> what the image on the retina should be, and a discrepancy between prediction and perception that demands a further account.</div>
+      </div>
+    </div>
+
+    <div class="walk-step" data-level="explain">
+      <div class="walk-step-marker">
+        <div class="walk-step-num">5</div>
+        <div class="walk-step-wire"></div>
+      </div>
+      <div class="walk-step-content">
+        <div class="walk-step-label">Theory <span class="wsl-tag">Explain (deepen)</span></div>
+        <div class="walk-step-title">A framework unifies the phenomenon</div>
+        <div class="walk-step-text">The Moon illusion is embedded within a broader theory of visual perception: the apparent-distance hypothesis (Ptolemy, Helmholtz), or the angular-size-contrast theory (Kaufman and Rock). These frameworks explain not just the Moon illusion but a family of size-perception phenomena, connecting lunar observation to terrestrial psychology. The supermoon's apparent enormity is a composite of a real 14% enlargement and a perceptual illusion governed by the brain's depth-processing heuristics. The theory does not just predict; it explains <em>why the prediction takes the form it does</em>.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="walk-aside fade-in">
+    <strong>Notice what just happened.</strong> We climbed five rungs without leaving the back garden. The percept was private. The fact was public. The regularity was ancient. The law was quantitative. The theory unified the lunar case with the broader architecture of visual cognition. Each step traded immediacy for generality. And at every transition, we deployed induction: generalising from this Moon, this evening, this observer, to a claim about all Moons, all evenings, all observers.
   </div>
 </section>
 
@@ -468,4 +570,5 @@ function toggleDetail(id,card){
 </script>
 </body>
 </html>
+
 
